@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container chính */
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ảnh đại diện */
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 3px solid #007BFF;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Tiêu đề chính */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Thông tin cá nhân */
+.info {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Kỹ năng */
+h2 {
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+.skills {
+    background: #007BFF;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills:hover {
+    background: #0056b3;
+}
+
+/* Liên hệ */
+.contact a {
+    display: block;
+    margin: 10px 0;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #0056b3;
+}
+
+/* Đáp ứng trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .skills {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
